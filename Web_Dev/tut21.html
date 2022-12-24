@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container{
+            width:900px;
+            background-color: lavenderblush;
+            border: 3px solid lightseagreen;
+            border-radius:10px;
+            padding:34px 25px;
+            margin:50px 250px;
+        
+        }
+
+        h1{
+            font-family: fantasy;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .item{
+            border: 3px solid rgb(233, 65, 101);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            
+        }
+
+        #fruit{
+            float: right;
+            width: 50%;
+        }
+        
+        #Stationary{
+            float: left;
+            width: 40%;
+        }
+
+        #Glasses{
+            /* float: left; */
+            clear:both;
+            width: 100%;
+        }
+
+
+    p,h3{
+        /* text-align: center; */
+        text-align: justify;
+    }
+
+    h1{
+        padding: 0px 220px;
+    }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="Fruitpara" class="item">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae repellendus asperiores soluta, odio cum voluptatum maxime earum atque placeat iste facilis vitae tenetur nemo quisquam quo? Recusandae quasi cum voluptates modi libero tempore porro exercitationem placeat quibusdam aut? Quia excepturi fuga hic vitae, recusandae iste architecto rem perferendis. Nostrum, exercitationem?
+            </p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="Statpara" class="item">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae repellendus asperiores soluta, odio cum voluptatum maxime earum atque placeat iste facilis vitae tenetur nemo quisquam quo? Recusandae quasi cum voluptates modi libero tempore porro exercitationem placeat quibusdam aut? Quia excepturi fuga hic vitae, recusandae iste architecto rem perferendis. Nostrum, exercitationem?
+            </p>
+        </div>
+        <div id="Glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="Glassespara" class="item">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae repellendus asperiores soluta, odio cum voluptatum maxime earum atque placeat iste facilis vitae tenetur nemo quisquam quo? Recusandae quasi cum voluptates modi libero tempore porro exercitationem placeat quibusdam aut? Quia excepturi fuga hic vitae, recusandae iste architecto rem perferendis. Nostrum, exercitationem?
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
